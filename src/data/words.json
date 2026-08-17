@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "singular": "school",
+    "singular_ipa": "/skuːl/",
+    "plural": "schools",
+    "plural_ipa": "/skuːlz/",
+    "type": "regular"
+  },
+  {
+    "id": 2,
+    "singular": "book",
+    "singular_ipa": "/bʊk/",
+    "plural": "books",
+    "plural_ipa": "/bʊks/",
+    "type": "regular"
+  },
+  {
+    "id": 3,
+    "singular": "cat",
+    "singular_ipa": "/kæt/",
+    "plural": "cats",
+    "plural_ipa": "/kæts/",
+    "type": "regular"
+  },
+  {
+    "id": 4,
+    "singular": "dog",
+    "singular_ipa": "/dɒɡ/",
+    "plural": "dogs",
+    "plural_ipa": "/dɒɡz/",
+    "type": "regular"
+  },
+  {
+    "id": 5,
+    "singular": "car",
+    "singular_ipa": "/kɑːr/",
+    "plural": "cars",
+    "plural_ipa": "/kɑːrz/",
+    "type": "regular"
+  },
+  {
+    "id": 6,
+    "singular": "pen",
+    "singular_ipa": "/pen/",
+    "plural": "pens",
+    "plural_ipa": "/penz/",
+    "type": "regular"
+  },
+  {
+    "id": 7,
+    "singular": "tree",
+    "singular_ipa": "/triː/",
+    "plural": "trees",
+    "plural_ipa": "/triːz/",
+    "type": "regular"
+  },
+  {
+    "id": 8,
+    "singular": "chair",
+    "singular_ipa": "/tʃeər/",
+    "plural": "chairs",
+    "plural_ipa": "/tʃeərz/",
+    "type": "regular"
+  },
+  {
+    "id": 9,
+    "singular": "table",
+    "singular_ipa": "/ˈteɪbl/",
+    "plural": "tables",
+    "plural_ipa": "/ˈteɪblz/",
+    "type": "regular"
+  },
+  {
+    "id": 10,
+    "singular": "computer",
+    "singular_ipa": "/kəmˈpjuːtər/",
+    "plural": "computers",
+    "plural_ipa": "/kəmˈpjuːtərz/",
+    "type": "regular"
+  },
+  {
+    "id": 11,
+    "singular": "phone",
+    "singular_ipa": "/fəʊn/",
+    "plural": "phones",
+    "plural_ipa": "/fəʊnz/",
+    "type": "regular"
+  }
+]
