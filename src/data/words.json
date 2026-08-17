@@ -88,3 +88,726 @@
     "type": "regular"
   }
 ]
+
+[
+  {
+    "id": 12,
+    "singular": "ability",
+    "singular_ipa": "/əˈbɪləti/",
+    "plural": "abilities",
+    "plural_ipa": "/əˈbɪlətiz/",
+    "type": "regular"
+  },
+  {
+    "id": 13,
+    "singular": "accident",
+    "singular_ipa": "/ˈæksɪdənt/",
+    "plural": "accidents",
+    "plural_ipa": "/ˈæksɪdənts/",
+    "type": "regular"
+  },
+  {
+    "id": 14,
+    "singular": "account",
+    "singular_ipa": "/əˈkaʊnt/",
+    "plural": "accounts",
+    "plural_ipa": "/əˈkaʊnts/",
+    "type": "regular"
+  },
+  {
+    "id": 15,
+    "singular": "achievement",
+    "singular_ipa": "/əˈtʃiːvmənt/",
+    "plural": "achievements",
+    "plural_ipa": "/əˈtʃiːvmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 16,
+    "singular": "act",
+    "singular_ipa": "/ækt/",
+    "plural": "acts",
+    "plural_ipa": "/ækts/",
+    "type": "regular"
+  },
+  {
+    "id": 17,
+    "singular": "action",
+    "singular_ipa": "/ˈækʃn/",
+    "plural": "actions",
+    "plural_ipa": "/ˈækʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 18,
+    "singular": "activity",
+    "singular_ipa": "/ækˈtɪvəti/",
+    "plural": "activities",
+    "plural_ipa": "/ækˈtɪvətiz/",
+    "type": "regular"
+  },
+  {
+    "id": 19,
+    "singular": "actor",
+    "singular_ipa": "/ˈæktər/",
+    "plural": "actors",
+    "plural_ipa": "/ˈæktərz/",
+    "type": "regular"
+  },
+  {
+    "id": 20,
+    "singular": "actress",
+    "singular_ipa": "/ˈæktrəs/",
+    "plural": "actresses",
+    "plural_ipa": "/ˈæktrəsɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 21,
+    "singular": "ad",
+    "singular_ipa": "/æd/",
+    "plural": "ads",
+    "plural_ipa": "/ædz/",
+    "type": "regular"
+  },
+  {
+    "id": 22,
+    "singular": "addition",
+    "singular_ipa": "/əˈdɪʃn/",
+    "plural": "additions",
+    "plural_ipa": "/əˈdɪʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 23,
+    "singular": "address",
+    "singular_ipa": "/əˈdres/",
+    "plural": "addresses",
+    "plural_ipa": "/əˈdresɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 24,
+    "singular": "administration",
+    "singular_ipa": "/ədˌmɪnɪˈstreɪʃn/",
+    "plural": "administrations",
+    "plural_ipa": "/ədˌmɪnɪˈstreɪʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 25,
+    "singular": "adult",
+    "singular_ipa": "/ˈædʌlt/",
+    "plural": "adults",
+    "plural_ipa": "/ˈædʌlts/",
+    "type": "regular"
+  },
+  {
+    "id": 26,
+    "singular": "advance",
+    "singular_ipa": "/ədˈvɑːns/",
+    "plural": "advances",
+    "plural_ipa": "/ədˈvɑːnsɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 27,
+    "singular": "advantage",
+    "singular_ipa": "/ədˈvɑːntɪdʒ/",
+    "plural": "advantages",
+    "plural_ipa": "/ədˈvɑːntɪdʒɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 28,
+    "singular": "adventure",
+    "singular_ipa": "/ədˈventʃər/",
+    "plural": "adventures",
+    "plural_ipa": "/ədˈventʃərz/",
+    "type": "regular"
+  },
+  {
+    "id": 29,
+    "singular": "advertisement",
+    "singular_ipa": "/ədˈvɜːtɪsmənt/",
+    "plural": "advertisements",
+    "plural_ipa": "/ədˈvɜːtɪsmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 30,
+    "singular": "affair",
+    "singular_ipa": "/əˈfeər/",
+    "plural": "affairs",
+    "plural_ipa": "/əˈfeərz/",
+    "type": "regular"
+  },
+  {
+    "id": 31,
+    "singular": "age",
+    "singular_ipa": "/eɪdʒ/",
+    "plural": "ages",
+    "plural_ipa": "/ˈeɪdʒɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 32,
+    "singular": "agency",
+    "singular_ipa": "/ˈeɪdʒənsi/",
+    "plural": "agencies",
+    "plural_ipa": "/ˈeɪdʒənsiz/",
+    "type": "regular"
+  },
+  {
+    "id": 33,
+    "singular": "agenda",
+    "singular_ipa": "/əˈdʒendə/",
+    "plural": "agendas",
+    "plural_ipa": "/əˈdʒendəz/",
+    "type": "regular"
+  },
+  {
+    "id": 34,
+    "singular": "agent",
+    "singular_ipa": "/ˈeɪdʒənt/",
+    "plural": "agents",
+    "plural_ipa": "/ˈeɪdʒənts/",
+    "type": "regular"
+  },
+  {
+    "id": 35,
+    "singular": "agreement",
+    "singular_ipa": "/əˈɡriːmənt/",
+    "plural": "agreements",
+    "plural_ipa": "/əˈɡriːmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 36,
+    "singular": "aid",
+    "singular_ipa": "/eɪd/",
+    "plural": "aids",
+    "plural_ipa": "/eɪdz/",
+    "type": "regular"
+  },
+  {
+    "id": 37,
+    "singular": "aim",
+    "singular_ipa": "/eɪm/",
+    "plural": "aims",
+    "plural_ipa": "/eɪmz/",
+    "type": "regular"
+  },
+  {
+    "id": 38,
+    "singular": "aircraft",
+    "singular_ipa": "/ˈeəkrɑːft/",
+    "plural": "aircraft",
+    "plural_ipa": "/ˈeəkrɑːft/",
+    "type": "unchanging"
+  },
+  {
+    "id": 39,
+    "singular": "airline",
+    "singular_ipa": "/ˈeəlaɪn/",
+    "plural": "airlines",
+    "plural_ipa": "/ˈeəlaɪnz/",
+    "type": "regular"
+  },
+  {
+    "id": 40,
+    "singular": "airport",
+    "singular_ipa": "/ˈeəpɔːt/",
+    "plural": "airports",
+    "plural_ipa": "/ˈeəpɔːts/",
+    "type": "regular"
+  },
+  {
+    "id": 41,
+    "singular": "alarm",
+    "singular_ipa": "/əˈlɑːm/",
+    "plural": "alarms",
+    "plural_ipa": "/əˈlɑːmz/",
+    "type": "regular"
+  },
+  {
+    "id": 42,
+    "singular": "album",
+    "singular_ipa": "/ˈælbəm/",
+    "plural": "albums",
+    "plural_ipa": "/ˈælbəmz/",
+    "type": "regular"
+  },
+  {
+    "id": 43,
+    "singular": "alternative",
+    "singular_ipa": "/ɔːlˈtɜːnətɪv/",
+    "plural": "alternatives",
+    "plural_ipa": "/ɔːlˈtɜːnətɪvz/",
+    "type": "regular"
+  },
+  {
+    "id": 44,
+    "singular": "ambition",
+    "singular_ipa": "/æmˈbɪʃn/",
+    "plural": "ambitions",
+    "plural_ipa": "/æmˈbɪʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 45,
+    "singular": "amount",
+    "singular_ipa": "/əˈmaʊnt/",
+    "plural": "amounts",
+    "plural_ipa": "/əˈmaʊnts/",
+    "type": "regular"
+  },
+  {
+    "id": 46,
+    "singular": "analysis",
+    "singular_ipa": "/əˈnæləsɪs/",
+    "plural": "analyses",
+    "plural_ipa": "/əˈnæləsiːz/",
+    "type": "irregular"
+  },
+  {
+    "id": 47,
+    "singular": "angle",
+    "singular_ipa": "/ˈæŋɡl/",
+    "plural": "angles",
+    "plural_ipa": "/ˈæŋɡlz/",
+    "type": "regular"
+  },
+  {
+    "id": 48,
+    "singular": "animal",
+    "singular_ipa": "/ˈænɪml/",
+    "plural": "animals",
+    "plural_ipa": "/ˈænɪmlz/",
+    "type": "regular"
+  },
+  {
+    "id": 49,
+    "singular": "ankle",
+    "singular_ipa": "/ˈæŋkl/",
+    "plural": "ankles",
+    "plural_ipa": "/ˈæŋklz/",
+    "type": "regular"
+  },
+  {
+    "id": 50,
+    "singular": "anniversary",
+    "singular_ipa": "/ˌænɪˈvɜːsəri/",
+    "plural": "anniversaries",
+    "plural_ipa": "/ˌænɪˈvɜːsəriz/",
+    "type": "regular"
+  },
+  {
+    "id": 51,
+    "singular": "announcement",
+    "singular_ipa": "/əˈnaʊnsmənt/",
+    "plural": "announcements",
+    "plural_ipa": "/əˈnaʊnsmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 52,
+    "singular": "answer",
+    "singular_ipa": "/ˈɑːnsər/",
+    "plural": "answers",
+    "plural_ipa": "/ˈɑːnsərz/",
+    "type": "regular"
+  },
+  {
+    "id": 53,
+    "singular": "apartment",
+    "singular_ipa": "/əˈpɑːtmənt/",
+    "plural": "apartments",
+    "plural_ipa": "/əˈpɑːtmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 54,
+    "singular": "app",
+    "singular_ipa": "/æp/",
+    "plural": "apps",
+    "plural_ipa": "/æps/",
+    "type": "regular"
+  },
+  {
+    "id": 55,
+    "singular": "appeal",
+    "singular_ipa": "/əˈpiːl/",
+    "plural": "appeals",
+    "plural_ipa": "/əˈpiːlz/",
+    "type": "regular"
+  },
+  {
+    "id": 56,
+    "singular": "appearance",
+    "singular_ipa": "/əˈpɪərəns/",
+    "plural": "appearances",
+    "plural_ipa": "/əˈpɪərənsɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 57,
+    "singular": "apple",
+    "singular_ipa": "/ˈæpl/",
+    "plural": "apples",
+    "plural_ipa": "/ˈæplz/",
+    "type": "regular"
+  },
+  {
+    "id": 58,
+    "singular": "application",
+    "singular_ipa": "/ˌæplɪˈkeɪʃn/",
+    "plural": "applications",
+    "plural_ipa": "/ˌæplɪˈkeɪʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 59,
+    "singular": "appointment",
+    "singular_ipa": "/əˈpɔɪntmənt/",
+    "plural": "appointments",
+    "plural_ipa": "/əˈpɔɪntmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 60,
+    "singular": "approach",
+    "singular_ipa": "/əˈprəʊtʃ/",
+    "plural": "approaches",
+    "plural_ipa": "/əˈprəʊtʃɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 61,
+    "singular": "approval",
+    "singular_ipa": "/əˈpruːvl/",
+    "plural": "approvals",
+    "plural_ipa": "/əˈpruːvlz/",
+    "type": "regular"
+  },
+  {
+    "id": 62,
+    "singular": "architect",
+    "singular_ipa": "/ˈɑːkɪtekt/",
+    "plural": "architects",
+    "plural_ipa": "/ˈɑːkɪtekts/",
+    "type": "regular"
+  },
+  {
+    "id": 63,
+    "singular": "area",
+    "singular_ipa": "/ˈeəriə/",
+    "plural": "areas",
+    "plural_ipa": "/ˈeəriəz/",
+    "type": "regular"
+  },
+  {
+    "id": 64,
+    "singular": "argument",
+    "singular_ipa": "/ˈɑːɡjumənt/",
+    "plural": "arguments",
+    "plural_ipa": "/ˈɑːɡjumənts/",
+    "type": "regular"
+  },
+  {
+    "id": 65,
+    "singular": "arm",
+    "singular_ipa": "/ɑːm/",
+    "plural": "arms",
+    "plural_ipa": "/ɑːmz/",
+    "type": "regular"
+  },
+  {
+    "id": 66,
+    "singular": "army",
+    "singular_ipa": "/ˈɑːmi/",
+    "plural": "armies",
+    "plural_ipa": "/ˈɑːmiz/",
+    "type": "regular"
+  },
+  {
+    "id": 67,
+    "singular": "arrangement",
+    "singular_ipa": "/əˈreɪndʒmənt/",
+    "plural": "arrangements",
+    "plural_ipa": "/əˈreɪndʒmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 68,
+    "singular": "arrest",
+    "singular_ipa": "/əˈrest/",
+    "plural": "arrests",
+    "plural_ipa": "/əˈrests/",
+    "type": "regular"
+  },
+  {
+    "id": 69,
+    "singular": "arrival",
+    "singular_ipa": "/əˈraɪvl/",
+    "plural": "arrivals",
+    "plural_ipa": "/əˈraɪvlz/",
+    "type": "regular"
+  },
+  {
+    "id": 70,
+    "singular": "art",
+    "singular_ipa": "/ɑːt/",
+    "plural": "arts",
+    "plural_ipa": "/ɑːts/",
+    "type": "regular"
+  },
+  {
+    "id": 71,
+    "singular": "article",
+    "singular_ipa": "/ˈɑːtɪkl/",
+    "plural": "articles",
+    "plural_ipa": "/ˈɑːtɪklz/",
+    "type": "regular"
+  },
+  {
+    "id": 72,
+    "singular": "artist",
+    "singular_ipa": "/ˈɑːtɪst/",
+    "plural": "artists",
+    "plural_ipa": "/ˈɑːtɪsts/",
+    "type": "regular"
+  },
+  {
+    "id": 73,
+    "singular": "aspect",
+    "singular_ipa": "/ˈæspekt/",
+    "plural": "aspects",
+    "plural_ipa": "/ˈæspekts/",
+    "type": "regular"
+  },
+  {
+    "id": 74,
+    "singular": "assessment",
+    "singular_ipa": "/əˈsesmənt/",
+    "plural": "assessments",
+    "plural_ipa": "/əˈsesmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 75,
+    "singular": "assignment",
+    "singular_ipa": "/əˈsaɪnmənt/",
+    "plural": "assignments",
+    "plural_ipa": "/əˈsaɪnmənts/",
+    "type": "regular"
+  },
+  {
+    "id": 76,
+    "singular": "assistant",
+    "singular_ipa": "/əˈsɪstənt/",
+    "plural": "assistants",
+    "plural_ipa": "/əˈsɪstənts/",
+    "type": "regular"
+  },
+  {
+    "id": 77,
+    "singular": "association",
+    "singular_ipa": "/əˌsəʊʃiˈeɪʃn/",
+    "plural": "associations",
+    "plural_ipa": "/əˌsəʊʃiˈeɪʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 78,
+    "singular": "athlete",
+    "singular_ipa": "/ˈæθliːt/",
+    "plural": "athletes",
+    "plural_ipa": "/ˈæθliːts/",
+    "type": "regular"
+  },
+  {
+    "id": 79,
+    "singular": "atmosphere",
+    "singular_ipa": "/ˈætməsfɪər/",
+    "plural": "atmospheres",
+    "plural_ipa": "/ˈætməsfɪərz/",
+    "type": "regular"
+  },
+  {
+    "id": 80,
+    "singular": "attack",
+    "singular_ipa": "/əˈtæk/",
+    "plural": "attacks",
+    "plural_ipa": "/əˈtæks/",
+    "type": "regular"
+  },
+  {
+    "id": 81,
+    "singular": "attempt",
+    "singular_ipa": "/əˈtempt/",
+    "plural": "attempts",
+    "plural_ipa": "/əˈtempts/",
+    "type": "regular"
+  },
+  {
+    "id": 82,
+    "singular": "attitude",
+    "singular_ipa": "/ˈætɪtjuːd/",
+    "plural": "attitudes",
+    "plural_ipa": "/ˈætɪtjuːdz/",
+    "type": "regular"
+  },
+  {
+    "id": 83,
+    "singular": "attorney",
+    "singular_ipa": "/əˈtɜːni/",
+    "plural": "attorneys",
+    "plural_ipa": "/əˈtɜːniz/",
+    "type": "regular"
+  },
+  {
+    "id": 84,
+    "singular": "attraction",
+    "singular_ipa": "/əˈtrækʃn/",
+    "plural": "attractions",
+    "plural_ipa": "/əˈtrækʃnz/",
+    "type": "regular"
+  },
+  {
+    "id": 85,
+    "singular": "audience",
+    "singular_ipa": "/ˈɔːdiəns/",
+    "plural": "audiences",
+    "plural_ipa": "/ˈɔːdiənsɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 86,
+    "singular": "aunt",
+    "singular_ipa": "/ɑːnt/",
+    "plural": "aunts",
+    "plural_ipa": "/ɑːnts/",
+    "type": "regular"
+  },
+  {
+    "id": 87,
+    "singular": "author",
+    "singular_ipa": "/ˈɔːθər/",
+    "plural": "authors",
+    "plural_ipa": "/ˈɔːθərz/",
+    "type": "regular"
+  },
+  {
+    "id": 88,
+    "singular": "authority",
+    "singular_ipa": "/ɔːˈθɒrəti/",
+    "plural": "authorities",
+    "plural_ipa": "/ɔːˈθɒrətiz/",
+    "type": "regular"
+  },
+  {
+    "id": 89,
+    "singular": "average",
+    "singular_ipa": "/ˈævərɪdʒ/",
+    "plural": "averages",
+    "plural_ipa": "/ˈævərɪdʒɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 90,
+    "singular": "award",
+    "singular_ipa": "/əˈwɔːd/",
+    "plural": "awards",
+    "plural_ipa": "/əˈwɔːdz/",
+    "type": "regular"
+  },
+  {
+    "id": 91,
+    "singular": "baby",
+    "singular_ipa": "/ˈbeɪbi/",
+    "plural": "babies",
+    "plural_ipa": "/ˈbeɪbiz/",
+    "type": "regular"
+  },
+  {
+    "id": 92,
+    "singular": "back",
+    "singular_ipa": "/bæk/",
+    "plural": "backs",
+    "plural_ipa": "/bæks/",
+    "type": "regular"
+  },
+  {
+    "id": 93,
+    "singular": "background",
+    "singular_ipa": "/ˈbækɡraʊnd/",
+    "plural": "backgrounds",
+    "plural_ipa": "/ˈbækɡraʊndz/",
+    "type": "regular"
+  },
+  {
+    "id": 94,
+    "singular": "bacterium",
+    "singular_ipa": "/bækˈtɪəriəm/",
+    "plural": "bacteria",
+    "plural_ipa": "/bækˈtɪəriə/",
+    "type": "irregular"
+  },
+  {
+    "id": 95,
+    "singular": "bag",
+    "singular_ipa": "/bæɡ/",
+    "plural": "bags",
+    "plural_ipa": "/bæɡz/",
+    "type": "regular"
+  },
+  {
+    "id": 96,
+    "singular": "balance",
+    "singular_ipa": "/ˈbæləns/",
+    "plural": "balances",
+    "plural_ipa": "/ˈbælənsɪz/",
+    "type": "regular"
+  },
+  {
+    "id": 97,
+    "singular": "ball",
+    "singular_ipa": "/bɔːl/",
+    "plural": "balls",
+    "plural_ipa": "/bɔːlz/",
+    "type": "regular"
+  },
+  {
+    "id": 98,
+    "singular": "ban",
+    "singular_ipa": "/bæn/",
+    "plural": "bans",
+    "plural_ipa": "/bænz/",
+    "type": "regular"
+  },
+  {
+    "id": 99,
+    "singular": "banana",
+    "singular_ipa": "/bəˈnɑːnə/",
+    "plural": "bananas",
+    "plural_ipa": "/bəˈnɑːnəz/",
+    "type": "regular"
+  },
+  {
+    "id": 100,
+    "singular": "band",
+    "singular_ipa": "/bænd/",
+    "plural": "bands",
+    "plural_ipa": "/bændz/",
+    "type": "regular"
+  },
+  {
+    "id": 101,
+    "singular": "bank",
+    "singular_ipa": "/bæŋk/",
+    "plural": "banks",
+    "plural_ipa": "/bæŋks/",
+    "type": "regular"
+  }
+]
