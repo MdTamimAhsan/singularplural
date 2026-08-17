@@ -1,12 +1,11 @@
 ---
-// Import your words data
 import wordsData from '../data/words.json';
-
-// Import Tailwind CSS
 import '../styles/global.css';
 
-// Page title and metadata
 const title = "English Plural Words Dictionary";
+
+// Extract unique types/categories for filter buttons
+const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(Boolean))];
 ---
 
 <!DOCTYPE html>
@@ -17,18 +16,18 @@ const title = "English Plural Words Dictionary";
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body class="bg-slate-50 text-slate-900 font-['Inter',sans-serif] min-h-screen flex flex-col antialiased">
     
-    <!-- Navbar / Header -->
+    <!-- Navbar -->
     <header class="border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-30">
       <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
             S
           </div>
-          <span class="font-bold text-slate-900 text-lg tracking-tight">SingularPlural</span>
+          <span class="font-bold text-slate-900 text-lg tracking-tight">Singular<span class="text-indigo-600">Plural</span></span>
         </div>
         <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-full border border-indigo-100">
           {wordsData.length} Words Loaded
@@ -36,18 +35,18 @@ const title = "English Plural Words Dictionary";
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <main class="max-w-6xl mx-auto px-4 py-12 flex-1 w-full">
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+    <!-- Hero & Search Section -->
+    <main class="max-w-6xl mx-auto px-4 py-10 flex-1 w-full">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-3">
           Master English <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Plural Forms</span>
         </h1>
-        <p class="text-slate-600 text-base sm:text-lg">
-          Search irregular plurals, regular rules, and edge cases instantly.
+        <p class="text-slate-600 text-sm sm:text-base">
+          Filter by grammar type, search words, and listen to authentic British & American pronunciations.
         </p>
 
         <!-- Search Bar -->
-        <div class="mt-8 relative max-w-xl mx-auto">
+        <div class="mt-6 relative max-w-xl mx-auto">
           <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
             <svg class="w-5 h-5" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -56,64 +55,177 @@ const title = "English Plural Words Dictionary";
           <input 
             type="text" 
             id="searchInput"
-            placeholder="Search singular or plural word (e.g. cactus, child)..." 
-            class="w-full pl-11 pr-4 py-3.5 bg-white border border-slate-300 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition text-slate-800 placeholder-slate-400"
+            placeholder="Search singular or plural word (e.g. school, book)..." 
+            class="w-full pl-11 pr-4 py-3 bg-white border border-slate-300 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition text-slate-800 placeholder-slate-400 text-sm sm:text-base"
           />
         </div>
+
+        <!-- Filter Buttons -->
+        {categories.length > 1 && (
+          <div class="flex flex-wrap gap-2 justify-center mt-5" id="filterContainer">
+            {categories.map((cat, idx) => (
+              <button 
+                type="button" 
+                class={`filter-btn capitalize px-4 py-1.5 rounded-full text-xs font-semibold transition border ${
+                  idx === 0 
+                    ? 'bg-indigo-600 text-white border-indigo-600' 
+                    : 'bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:text-indigo-600'
+                }`}
+                data-category={cat}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <!-- Word Cards Grid -->
       <div id="wordGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {wordsData.map((item) => (
-          <div class="word-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all group flex flex-col justify-between"
-               data-singular={item.singular?.toLowerCase()} 
-               data-plural={item.plural?.toLowerCase()}>
+          <div 
+            class="word-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all flex flex-col justify-between"
+            data-singular={item.singular?.toLowerCase()} 
+            data-plural={item.plural?.toLowerCase()}
+            data-type={item.type?.toLowerCase() || 'regular'}
+          >
+            <!-- Singular Block -->
             <div>
-              <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Singular</span>
-              <p class="text-xl font-bold text-slate-800 group-hover:text-indigo-600 transition-colors">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Singular</span>
+                {item.type && (
+                  <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded-md border border-indigo-100/60">
+                    {item.type}
+                  </span>
+                )}
+              </div>
+              <p class="text-2xl font-bold text-slate-800 mt-1">
                 {item.singular}
               </p>
+              {item.singular_ipa && (
+                <p class="text-xs text-slate-400 font-mono mt-0.5">
+                  {item.singular_ipa}
+                </p>
+              )}
             </div>
             
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-baseline justify-between">
-              <div>
-                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-500">Plural</span>
-                <p class="text-lg font-semibold text-slate-900">
-                  {item.plural}
+            <!-- Plural Block -->
+            <div class="mt-4 pt-3 border-t border-slate-100">
+              <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600">Plural</span>
+              <p class="text-xl font-bold text-slate-900 mt-0.5">
+                {item.plural}
+              </p>
+              {item.plural_ipa && (
+                <p class="text-xs text-slate-400 font-mono mt-0.5">
+                  {item.plural_ipa}
                 </p>
-              </div>
-              {item.type && (
-                <span class="text-[10px] px-2 py-0.5 bg-slate-100 text-slate-600 rounded-md font-medium">
-                  {item.type}
-                </span>
               )}
+
+              <!-- Pronunciation Buttons -->
+              <div class="mt-4 pt-3 border-t border-slate-100/80 flex items-center gap-2">
+                <button 
+                  type="button"
+                  class="speak-btn flex-1 inline-flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-xs font-semibold bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 border border-slate-200 transition active:scale-95"
+                  data-word={item.plural}
+                  data-lang="en-GB"
+                  title={`Listen to British pronunciation of "${item.plural}"`}
+                >
+                  <svg class="w-3.5 h-3.5" width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4a2 2 0 00-2 2v5a2 2 0 002 2h2.44l4.5 4.5c.944.945 2.56.276 2.56-1.06V4.06zM17.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                  </svg>
+                  <span>UK 🇬🇧</span>
+                </button>
+
+                <button 
+                  type="button"
+                  class="speak-btn flex-1 inline-flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-xs font-semibold bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 border border-slate-200 transition active:scale-95"
+                  data-word={item.plural}
+                  data-lang="en-US"
+                  title={`Listen to American pronunciation of "${item.plural}"`}
+                >
+                  <svg class="w-3.5 h-3.5" width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4a2 2 0 00-2 2v5a2 2 0 002 2h2.44l4.5 4.5c.944.945 2.56.276 2.56-1.06V4.06zM17.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                  </svg>
+                  <span>US 🇺🇸</span>
+                </button>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      <!-- Empty Search Fallback -->
+      <!-- Empty State -->
       <div id="noResults" class="hidden text-center py-16">
-        <p class="text-slate-400 text-lg">No matching words found.</p>
+        <p class="text-slate-400 text-lg font-medium">No matching words found.</p>
+        <p class="text-slate-500 text-sm mt-1">Try another search term or filter.</p>
       </div>
     </main>
 
-    <!-- Client-side Instant Search -->
+    <!-- Client Script -->
     <script>
-      const searchInput = document.getElementById('searchInput');
+      // Speech Synthesis Audio Engine
+      function speakWord(text: string, lang: string) {
+        if (!('speechSynthesis' in window)) {
+          alert('Sorry, your browser does not support text-to-speech.');
+          return;
+        }
+        
+        window.speechSynthesis.cancel(); // Stop any currently playing audio
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+        utterance.rate = 0.9; // Slightly slower for clear pronunciation learning
+
+        // Pick specific native voice if available
+        const voices = window.speechSynthesis.getVoices();
+        const voice = voices.find(v => v.lang.startsWith(lang));
+        if (voice) {
+          utterance.voice = voice;
+        }
+
+        window.speechSynthesis.speak(utterance);
+      }
+
+      // Pre-load voices
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.onvoiceschanged = () => {
+          window.speechSynthesis.getVoices();
+        };
+      }
+
+      // Audio click handler
+      document.addEventListener('click', (e) => {
+        const btn = (e.target as HTMLElement).closest('.speak-btn');
+        if (!btn) return;
+
+        const word = btn.getAttribute('data-word');
+        const lang = btn.getAttribute('data-lang') || 'en-US';
+
+        if (word) {
+          speakWord(word, lang);
+        }
+      });
+
+      // Filter & Search Engine
+      const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
       const cards = document.querySelectorAll('.word-card');
+      const filterButtons = document.querySelectorAll('.filter-btn');
       const noResults = document.getElementById('noResults');
 
-      searchInput?.addEventListener('input', (e) => {
-        const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+      let currentCategory = 'all';
+
+      function filterAndSearch() {
+        const query = searchInput?.value.toLowerCase().trim() || '';
         let visibleCount = 0;
 
         cards.forEach((card) => {
           const singular = card.getAttribute('data-singular') || '';
           const plural = card.getAttribute('data-plural') || '';
-          const match = singular.includes(query) || plural.includes(query);
+          const type = card.getAttribute('data-type') || '';
 
-          if (match) {
+          const matchesQuery = !query || singular.includes(query) || plural.includes(query);
+          const matchesCategory = currentCategory === 'all' || type === currentCategory;
+
+          if (matchesQuery && matchesCategory) {
             (card as HTMLElement).style.display = 'flex';
             visibleCount++;
           } else {
@@ -124,6 +236,23 @@ const title = "English Plural Words Dictionary";
         if (noResults) {
           noResults.style.display = visibleCount === 0 ? 'block' : 'none';
         }
+      }
+
+      searchInput?.addEventListener('input', filterAndSearch);
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach((b) => {
+            b.classList.remove('bg-indigo-600', 'text-white', 'border-indigo-600');
+            b.classList.add('bg-white', 'text-slate-600', 'border-slate-200');
+          });
+
+          btn.classList.remove('bg-white', 'text-slate-600', 'border-slate-200');
+          btn.classList.add('bg-indigo-600', 'text-white', 'border-indigo-600');
+
+          currentCategory = (btn.getAttribute('data-category') || 'all').toLowerCase();
+          filterAndSearch();
+        });
       });
     </script>
   </body>
