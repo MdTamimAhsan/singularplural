@@ -42,6 +42,7 @@ const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(
         </div>
 
         <div class="flex items-center gap-3">
+
           <!-- Word Count Badge -->
           <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 rounded-full border border-indigo-100 dark:border-indigo-900/60">
             {wordsData.length} Words Loaded
@@ -78,6 +79,20 @@ const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(
           Filter by grammar type, search words, and listen to authentic British, American & Australian pronunciations.
         </p>
 
+        <!-- Words of Gratitude Button -->
+<div class="mt-5">
+  <button
+    type="button"
+    id="gratitudeBtn"
+    class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl
+           bg-indigo-600 hover:bg-indigo-700
+           text-white text-sm font-semibold
+           shadow-sm transition active:scale-95"
+  >
+    ♞ Words of Gratitude
+  </button>
+</div>
+
         <!-- Search Bar -->
         <div class="mt-6 relative max-w-xl mx-auto">
           <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
@@ -112,6 +127,19 @@ const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(
           </div>
         )}
       </div>
+
+      <!-- Video Section -->
+<div class="max-w-3xl mx-auto mb-10">
+  <video
+    controls
+    class="w-full rounded-2xl border border-slate-200 dark:border-slate-800 shadow-lg"
+  >
+    <source src="/gratitude-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- Word Cards Grid -->
 
       <!-- Word Cards Grid -->
       <div id="wordGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -248,9 +276,65 @@ const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(
         <p class="text-slate-500 dark:text-slate-600 text-sm mt-1">Try another search term or filter.</p>
       </div>
     </main>
+    <!-- Words of Gratitude Modal -->
+<div
+  id="gratitudeModal"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4"
+>
+  <div
+    class="relative w-full max-w-2x1 rounded-2xl border border-slate-200 dark:border-slate-700
+           bg-white dark:bg-slate-900 p-10 text-center shadow-2xl"
+  >
+    <!-- Close Button -->
+    <button
+      type="button"
+      id="closeGratitude"
+      class="absolute right-4 top-3 text-2xl text-slate-400 hover:text-slate-700 dark:hover:text-white"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <!-- Picture -->
+    <img
+      src="/gratitude-photo.jpg"
+      alt=""
+      class="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
+    />
+
+    <h2 class="mb-3 text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+      Words of Gratitude
+    </h2>
+
+    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+      If this small website helps you, keep my parents, my sister and my team from 10 Minute School in your prayers!
+    </p>
+  </div>
+</div>
 
     <!-- Client Script -->
     <script>
+    // Words of Gratitude modal
+const gratitudeBtn = document.getElementById('gratitudeBtn');
+const gratitudeModal = document.getElementById('gratitudeModal');
+const closeGratitude = document.getElementById('closeGratitude');
+
+gratitudeBtn?.addEventListener('click', () => {
+  gratitudeModal?.classList.remove('hidden');
+  gratitudeModal?.classList.add('flex');
+});
+
+closeGratitude?.addEventListener('click', () => {
+  gratitudeModal?.classList.add('hidden');
+  gratitudeModal?.classList.remove('flex');
+});
+
+gratitudeModal?.addEventListener('click', (event) => {
+  if (event.target === gratitudeModal) {
+    gratitudeModal.classList.add('hidden');
+    gratitudeModal.classList.remove('flex');
+  }
+});
       // Dark Mode Toggle Logic
       const themeToggle = document.getElementById('themeToggle');
       themeToggle?.addEventListener('click', () => {
