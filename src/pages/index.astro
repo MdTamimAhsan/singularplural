@@ -313,8 +313,9 @@ const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(
   class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4"
 >
   <div
-    class="relative w-full max-w-2x1 rounded-2xl border border-slate-200 dark:border-slate-700
-           bg-white dark:bg-slate-900 p-10 text-center shadow-2xl"
+    class="relative w-full max-w-[90%] rounded-2xl border border-slate-200 dark:border-slate-700
+           bg-white dark:bg-slate-900 p-8 text-center shadow-2xl"
+           style="max-width: 700px;"
   >
     <!-- Close Button -->
     <button
@@ -330,14 +331,14 @@ const categories = ["all", ...new Set(wordsData.map((item) => item.type).filter(
     <img
       src="/gratitude-photo.jpg"
       alt=""
-      class="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
+      class="mx-auto mb-4 h-52 w-52 rounded-full object-cover"
     />
 
-    <h2 class="mb-3 text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+    <h2 class="mb-3 text-3xl font-bold text-indigo-600 dark:text-indigo-400">
       Words of Gratitude
     </h2>
 
-    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+    <p class="text-base sm:text-lg leading-relaxed text-slate-600 dark:text-slate-300">
       If this small website helps you, keep my parents, my sister and my team from 10 Minute School in your prayers!
     </p>
   </div>
